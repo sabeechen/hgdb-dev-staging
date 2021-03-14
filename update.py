@@ -4,8 +4,7 @@ import os
 from os.path import join
 
 
-async def main():
-    
+def main():    
     source_repo = sys.argv[0]
     staging_repo = sys.argv[1]
     run_number = os.environ.get('GITHUB_RUN_NUMBER', -1)
