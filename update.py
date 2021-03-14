@@ -11,8 +11,8 @@ def main():
         print(f)
     print("Listing Complete")
 
-    source_repo = join(os.getcwd(), sys.argv[0])
-    staging_repo = join(os.getcwd(), sys.argv[1])
+    source_repo = join(os.getcwd(), sys.argv[1])
+    staging_repo = join(os.getcwd(), sys.argv[2])
     run_number = os.environ.get('GITHUB_RUN_NUMBER', -1)
     with open(join(source_repo, "hassio-google-drive-backup", "config.json")) as f:
         source_config = json.load(f)
