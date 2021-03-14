@@ -6,6 +6,10 @@ from os.path import join
 
 def main():
     print(os.getcwd())
+    files = os.listdir(os.getcwd())
+    for f in files:
+        print(f)
+
     source_repo = sys.argv[0]
     staging_repo = sys.argv[1]
     run_number = os.environ.get('GITHUB_RUN_NUMBER', -1)
