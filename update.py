@@ -9,6 +9,7 @@ def main():
     files = os.listdir(os.getcwd())
     for f in files:
         print(f)
+    print("Listing Complete")
 
     source_repo = sys.argv[0]
     staging_repo = sys.argv[1]
