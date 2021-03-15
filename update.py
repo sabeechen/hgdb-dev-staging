@@ -5,12 +5,6 @@ from os.path import join
 
 
 def main():
-    print(os.getcwd())
-    files = os.listdir(os.getcwd())
-    for f in files:
-        print(f)
-    print("Listing Complete")
-
     source_repo = join(os.getcwd(), sys.argv[1])
     staging_repo = join(os.getcwd(), sys.argv[2])
     run_number = os.environ.get('GITHUB_RUN_NUMBER', -1)
