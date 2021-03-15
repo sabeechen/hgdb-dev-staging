@@ -1,6 +1,6 @@
 {
     "name": "Home Assistant Google Drive Backup (staging)",
-    "version": "0.103.1.staging.16",
+    "version": "0.103.1.staging.17",
     "slug": "hassio_google_drive_backup_staging",
     "description": "Automatically back up Home Assistant snapshots to Google Drive",
     "arch": [
@@ -20,7 +20,7 @@
     "webui": "[PROTO:use_ssl]://[HOST]:[PORT:1627]/",
     "ingress": true,
     "panel_icon": "mdi:cloud",
-    "panel_title": "Snapshots(staging)",
+    "panel_title": "Snapshots (staging)",
     "panel_admin": true,
     "map": [
         "ssl",
