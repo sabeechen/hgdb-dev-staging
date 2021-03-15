@@ -35,6 +35,10 @@ def main():
     with open(join(staging_repo, "hassio-google-drive-backup", "config.json"), "w") as f:
         json.dump(source_config, f, indent=4)
 
+    # Add debugging libraries
+    with open(join(source_repo, "hassio-google-drive-backup", "requirements-addon.txt"), "at") as f:
+        f.write("ptvsd\n")
+
 
 if __name__ == '__main__':
     print("Starting")
