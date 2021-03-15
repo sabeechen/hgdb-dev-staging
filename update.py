@@ -23,7 +23,7 @@ def main():
     source_config['name'] = source_config['name'] + " (staging)"
     source_config['slug'] = source_config['slug'] + "_staging"
     source_config['image'] = source_config['image'] + "_staging"
-    source_config['panel_title'] = source_config['panel_title'] + "(staging)"
+    source_config['panel_title'] = source_config['panel_title'] + " (staging)"
     with open(join(source_repo, "hassio-google-drive-backup", "config.json"), "w") as f:
         json.dump(source_config, f, indent=4)
     with open(join(staging_repo, "hassio-google-drive-backup", "config.json"), "w") as f:
