@@ -31,9 +31,9 @@ def main():
     source_config['image'] = source_config['image'] + "_staging"
     source_config['panel_title'] = source_config['panel_title'] + "(staging)"
     with open(join(source_repo, "hassio-google-drive-backup", "config.json"), "w") as f:
-        json.dump(source_config, f)
+        json.dump(source_config, f, indent=4)
     with open(join(staging_repo, "hassio-google-drive-backup", "config.json"), "w") as f:
-        json.dump(source_config, f)
+        json.dump(source_config, f, indent=4)
 
 
 if __name__ == '__main__':
