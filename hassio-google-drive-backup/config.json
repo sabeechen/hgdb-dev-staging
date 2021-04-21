@@ -1,6 +1,6 @@
 {
     "name": "Home Assistant Google Drive Backup (staging)",
-    "version": "0.104.1.staging.32",
+    "version": "0.104.1.staging.33",
     "slug": "hassio_google_drive_backup_staging",
     "description": "Automatically back up Home Assistant snapshots to Google Drive",
     "arch": [
@@ -10,8 +10,6 @@
         "amd64",
         "i386"
     ],
-    "startup": "application",
-    "boot": "auto",
     "url": "https://github.com/sabeechen/hassio-google-drive-backup",
     "homeassistant_api": true,
     "hassio_api": true,
@@ -82,6 +80,9 @@
     },
     "ports": {
         "1627/tcp": 1627
+    },
+    "ports_description": {
+        "1627/tcp": "Direct access to the add-on without Ingress"
     },
     "image": "sabeechen/hassio-google-drive-backup-{arch}_staging"
 }
