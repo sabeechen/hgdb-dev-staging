@@ -1,6 +1,6 @@
 {
     "name": "Home Assistant Google Drive Backup (staging)",
-    "version": "0.104.2.staging.40",
+    "version": "0.104.2.staging.41",
     "slug": "hassio_google_drive_backup_staging",
     "description": "Automatically back up Home Assistant snapshots to Google Drive",
     "arch": [
@@ -18,7 +18,6 @@
     "ingress": true,
     "panel_icon": "mdi:cloud",
     "panel_title": "Snapshots (staging)",
-    "panel_admin": true,
     "map": [
         "ssl",
         "backup:rw",
@@ -37,7 +36,7 @@
         "ignore_upgrade_snapshots": "bool?",
         "delete_after_upload": "bool?",
         "verbose": "bool?",
-        "use_ssl": "bool",
+        "use_ssl": "bool?",
         "certfile": "str?",
         "keyfile": "str?",
         "require_login": "bool?",
@@ -51,7 +50,7 @@
         "generational_years": "int(0,)?",
         "generational_day_of_year": "int(1,365)?",
         "generational_day_of_month": "int(1,31)?",
-        "generational_day_of_week": "match(^(mon|tue|wed|thu|fri|sat|sun)$)?",
+        "generational_day_of_week": "list(mon|tue|wed|thu|fri|sat|sun)?",
         "generational_delete_early": "bool?",
         "notify_for_stale_snapshots": "bool?",
         "enable_snapshot_stale_sensor": "bool?",
