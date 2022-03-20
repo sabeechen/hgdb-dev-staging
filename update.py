@@ -31,7 +31,7 @@ def main():
 
     # Add debugging libraries
     with open(join(source_repo, "hassio-google-drive-backup", "requirements-addon.txt"), "at") as f:
-        f.write("ptvsd\n")
+        f.write("debugpy\n")
 
 
 if __name__ == '__main__':
