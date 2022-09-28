@@ -1,6 +1,6 @@
 {
     "name": "Home Assistant Google Drive Backup (staging)",
-    "version": "0.108.4.staging.105",
+    "version": "0.108.4.staging.106",
     "slug": "hassio_google_drive_backup_staging",
     "description": "Automatically manage backups between Home Assistant and Google Drive",
     "arch": [
