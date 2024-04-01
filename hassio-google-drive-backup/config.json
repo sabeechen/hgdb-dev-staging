@@ -1,6 +1,6 @@
 {
     "name": "Home Assistant Google Drive Backup (staging)",
-    "version": "0.112.1.staging.166",
+    "version": "0.112.1.staging.168",
     "slug": "hassio_google_drive_backup_staging",
     "description": "Automatically manage backups between Home Assistant and Google Drive",
     "arch": [
@@ -100,6 +100,7 @@
         "snapshot_password": "str?",
         "maximum_upload_chunk_bytes": "float(262144,)?",
         "ha_reporting_interval_seconds": "int(1,)?",
+        "pending_backup_timeout_seconds": "float(0,)?",
         "upload_limit_bytes_per_second": "float(0,)?",
         "backup_check_interval_seconds": "float(0.5,)?"
     },
